@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/sliqus/ServiqBot#readme",
   "dependencies": {
-    "discord.js": "^11.4.2"
+    "discord.js": "^11.4.2",
+    "firebase-admin": "^7.3.0"
   }
 }

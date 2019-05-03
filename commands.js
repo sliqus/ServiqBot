@@ -1,5 +1,5 @@
 const commands = {
-  "말하기": param => param
+  "말": param => param
 };
 
 function answer(msg){
@@ -12,5 +12,5 @@ function answer(msg){
     }
 }
 
-console.log(answer({content: "sq 말하기 안녕"}));
+console.log(answer({content: "sq 말 안녕"}));
 module.exports = answer;
