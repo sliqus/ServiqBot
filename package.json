@@ -1,0 +1,22 @@
+{
+  "name": "serviqbot",
+  "version": "1.0.0",
+  "description": "The Discord Bot for Server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sliqus/ServiqBot.git"
+  },
+  "author": "Sliqus",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sliqus/ServiqBot/issues"
+  },
+  "homepage": "https://github.com/sliqus/ServiqBot#readme",
+  "dependencies": {
+    "discord.js": "^11.4.2"
+  }
+}
