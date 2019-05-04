@@ -1,19 +1,14 @@
 // 기본 설정
-
 const Discord = require("discord.js");
-var admin = require("firebase-admin");
-
 const client = new Discord.Client();
 
 const tokens = require("./tokens/tokens.js"); // 토큰 가져오기
+var admin = require("firebase-admin");
 var serviceAccount = tokens("firebase");
 
 const errors = require("./errors.json");
 
-
-/////////////////////////////////////////////////////////
-//firebase 연결 영역
-/////////////////////////////////////////////////////////
+//firebase 설정
 admin.initializeApp({ // firebase 실행
   credential: admin.credential.cert(serviceAccount),
   databaseURL: "https://serviqbot.firebaseio.com"
