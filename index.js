@@ -30,7 +30,7 @@ const prefix = "$";
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-
+  client.user.setActivity("$help를 입력하세요!")
 });
 
 client.on('message', msg => {
