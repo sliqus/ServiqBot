@@ -24,7 +24,6 @@ var ref = db.ref("servers/"); // db 위치
 ref.once("value", function(data) {
   console.log(data.val()); // db위치에서 json정보 가져오기
 });
-/////////////////////////////////////////////////////////
 
 const prefix = "$";
 
@@ -97,12 +96,12 @@ function runCommand(msg){
   }
 
   function errorPrint(errorCode) {
-    const erembed = new Discord.RichEmbed()
+    const errEmbed = new Discord.RichEmbed()
       .setTitle(":warning: 오류!")
       .setDescription(errors[errorCode])
       .setColor("#ED0000")
       .setAuthor(msg.author.tag, msg.author.displayAvatarURL);
-    return erembed;
+    return errEmbed;
   }
 }
 
